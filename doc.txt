@@ -1,0 +1,51 @@
+I have a Next.js 15 project for a novel website that I’ve already set up. The website should allow users to register, login, and manage their accounts, as well as browse novels, authors, categories, and tags. Users should also be able to read chapters, add novels to favorites, and bookmark chapters. I want you to help me design the backend using MongoDB and GraphQL, and create a modular, scalable structure that can easily integrate with the existing frontend.
+
+Please create a rough structure of MongoDB models and their relationships, including the following entities:
+
+User: name, email, hashed password, favorites, bookmarks, login functionality, roles (if needed), and any other fields necessary for authentication and profile management.
+
+Novel: title, description, author reference, category reference, tags, chapters, and multilingual support for content.
+
+Author: name, bio, novels.
+
+Category: name, novels.
+
+Tag: name, novels.
+
+Chapter: novel reference, title, content (both English and Urdu), chapter number.
+
+Include suggestions for efficient GraphQL queries and mutations for CRUD operations on all entities. Make sure the design supports:
+
+Fetching novels by author, category, or tag efficiently
+
+User authentication, registration, and login with secure password handling
+
+Favorites and bookmarks linked to users
+
+Multilingual content handling (English + Urdu)
+
+Scalable architecture for multiple users, novels, and chapters
+
+Before providing the blueprint, please ask me questions step by step about any missing details you need, such as:
+
+Do you want email verification or password reset functionality?
+
+Should users have roles (admin, reader) or is a single user type sufficient?
+
+How do you want favorites and bookmarks to behave—should users be able to add multiple bookmarks per chapter or only one?
+
+Are there any additional fields you want in novels, chapters, or authors (like cover images, ratings, etc.)?
+
+Finally, once all clarifications are addressed, provide a complete backend blueprint: MongoDB models, sample GraphQL schema, relationships, and implementation notes for connecting to the Next.js 15 frontend.
+
+
+
+env related data:
+MONGODB_URI=mongodb+srv://samarhayatdev:euCDih0ViHL7cyJS@novel-graphql-backend-c.xxapzxc.mongodb.net/?retryWrites=true&w=majority&appName=novel-graphql-backend-clustor
+
+note:
+
+- dont use express use nextjs routes
+- dont use javascript use typescript
+- do stuff like small task instead of creating everything in one step
+- ask if anything you want to know
